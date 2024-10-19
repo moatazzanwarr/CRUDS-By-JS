@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2d2e36;
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.crud{
+    width: 90%;
+    margin: 50px auto;
+}
+.crud > .head{
+    text-align: center;
+}
+
+.crud input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #1c1c1d;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 5px;
+    color: #FFF;
+}
+.crud input:focus{
+    background: #000;
+    transform: scale(1.02);
+    transition: .4s all ease;
+}
+
+::placeholder{
+    color: #5d5c6d;
+}
+
+.crud > .inputs > .price > input{
+    width: 20%;
+}
+
+#total{
+    background: rgb(173, 61, 61);
+    padding: 5px;
+    border-radius: 4px;
+}
+#total::before{
+    content: "Total: ";
+}
+
+.crud button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #0f21aa;
+    color: #FFF;
+    margin: 4px 0;
+}
+.crud button:hover{
+    opacity: .9;
+    letter-spacing: 1px;
+    transition: .4s all ;
+}
+
+.crud > .outputs{
+    width: 100%;
+}
+
+.crud > .outputs > .searchBlock > .btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+
+.crud > .outputs > .searchBlock > .btnSearch > button{
+    width: 49%;
+}
+
+.crud > .outputs > table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.crud > .outputs > table th{
+    text-transform: uppercase;
+}
+
+.crud > .outputs > table th,td{
+    padding: 5px;
+}
